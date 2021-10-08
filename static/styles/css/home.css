@@ -1,0 +1,254 @@
+.bg {
+    background-color: black;
+    background-image: url("/static/images/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container-fluid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+#wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#tools-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5em;
+    opacity: 0;
+}
+#but1 {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+#but2 {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+#but3 {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+@media only screen and (min-width: 700px) {
+    a {
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+        margin: 0.6em;
+        text-align: center;
+    }
+    a:hover {
+        color: #808080 !important ;
+    }
+    .image-logo {
+        margin-top:0.2em;
+        margin-right: 1.8em;
+        width: 75px;
+        height: 48px;
+    }
+    #preview-home {
+        text-align: center;
+        margin-top: 8em;
+        opacity: 0;
+    }
+    .preview-text {
+        font-size: 5em;
+        font-weight: 100;
+        color: white;
+    }
+    .preview-paragraph {
+        margin: auto;
+        margin-top: 0.8em;
+        font-size: 1.7em;
+        font-weight: 100;
+        color: white;
+        max-width: 25em;
+    }
+    .btn.btn-outline-light {
+       color: white;
+       font-size: 1.5em;
+       font-weight: 200;
+       border: 1px solid white;
+       margin-top: 3em;
+    }
+    .btn.btn-outline-light:hover {
+        background-color: #808080
+    }
+    .image-pdf {
+        width: 190px;
+        height: 216px;
+        margin-top: 1em;
+    }
+    .image-youtube {
+        width: 210px;
+        height: 208px;
+        margin-top: 1em;
+
+    }
+    .image-coming-soon {
+        width: 203px;
+        height: 204px;
+        margin-top: 1em;
+    }
+    h3 {
+        font-weight: 250;
+        margin-top: 0.5em;
+        font-size: 30px;
+        color: white;
+    }
+    .tool-explanation {
+        max-width: 20em;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .tool {
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    #contact-container{
+        text-align: center;
+        margin-top: 6em;
+        opacity: 0;
+    }
+    .contact-header {
+        font-size: 2.5em;
+        font-weight: 200;
+        color: white;
+    }
+    .contact-email {
+        font-size: 2.5em;
+        font-weight: 200;
+        color: white;
+    }
+    .contact-paragraph {
+        margin: auto;
+        margin-top: 0.8em;
+        font-size: 1.7em;
+        font-weight: 100;
+        color: white;
+        max-width: 25em;
+    }
+}
+@media only screen and (max-width: 699px) {
+    a {
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+        text-align: center;
+    }
+    a:hover {
+        color: #808080 !important ;
+    }
+    .image-logo {
+        margin-top:0.5em;
+        margin-right: 1em;
+        margin-bottom: 0.5em;
+        width: 52px;
+        height: 34px;
+    }
+    #preview-home {
+        text-align: center;
+        margin-top: 3em;
+        opacity: 0;
+    }
+    .preview-text {
+        font-size: 2.2em;
+        font-weight: 250;
+        color: white;
+    }
+    .preview-paragraph {
+        margin: auto;
+        margin-top: 1em;
+        font-size: 1.2em;
+        font-weight: 100;
+        color: white;
+        max-width: 15em;
+    }
+    .btn.btn-outline-light {
+       color: white;
+       font-size: 1.5em;
+       font-weight: 200;
+       border: 1px solid white;
+       margin-top: 1.2em;
+    }
+    .btn.btn-outline-light:hover {
+        background-color: #808080
+    }
+    .image-pdf {
+        width: 190px;
+        height: 216px;
+        margin-top: 1em;
+    }
+    .image-youtube {
+        width: 210px;
+        height: 208px;
+        margin-top: 1em;
+
+    }
+    .image-coming-soon {
+        width: 203px;
+        height: 204px;
+        margin-top: 1em;
+    }
+    h3 {
+        font-weight: 250;
+        margin-top: 0.5em;
+        font-size: 20px;
+        color: white;
+    }
+    .tool-explanation {
+        max-width: 20em;
+        font-size: 14px;
+        font-weight: 100;
+        color: white;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .tool {
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    #contact-container{
+        text-align: center;
+        margin-top: 5em;
+        opacity: 0;
+    }
+    .contact-header {
+        font-size: 1.7em;
+        font-weight: 200;
+        color: white;
+    }
+    .contact-email {
+        font-size: 1.7em;
+        font-weight: 200;
+        color: white;
+    }
+    .contact-paragraph {
+        margin: auto;
+        margin-top: 0.8em;
+        font-size: 1em;
+        font-weight: 100;
+        color: white;
+        max-width: 20em;
+    }
+}

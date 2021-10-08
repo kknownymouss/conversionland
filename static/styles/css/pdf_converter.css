@@ -1,0 +1,250 @@
+.bg {
+    background-color: black;
+    background-image: url("/static/images/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pdf-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1em;
+}
+#container-fluid {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        background-color: black;
+        justify-content: center;
+}
+@media only screen and (min-width: 700px) {
+    .home-logo {
+        width: 40px;
+        height: 38px;
+        position: absolute;
+        border: none;
+        left: 1.5em;
+    }
+    .home-logo:hover {
+        opacity: 0.5;
+    }
+    .image-pdf {
+        width: 66px;
+        height: 65px;
+        border: none;
+        margin: 0.6em;
+    }
+    .image-pdf-title {
+        color: white;
+        font-weight: 100;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    .pdf-container {
+        text-align: center;
+        margin-top: 3em;
+        opacity: 0;
+
+    }
+    .upload-form {
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        margin: auto;
+        width: 38em;
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .dotted-pack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 2px dashed gray;
+        border-radius: 7px;
+        width: 25em;
+        margin: auto;
+        padding: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+    .upload-logo {
+        width: 90px;
+        height: 90px;
+        margin: 0.5em;
+    }
+    .btn.btn-outline-light {
+        color: white;
+        margin: 0.7em;
+        font-size: 20px;
+    }
+    .btn.btn-outline-light:hover {
+        background-color: #808080;
+    }
+    .files-number {
+        font-size: 20px;
+        margin: 0.5em;
+        font-weight: 400;
+        color: white;
+    }
+    .selected-files-names {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        height: 80px;
+        overflow-y: auto;
+    }
+    .selected-files-names::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    .selected-files-names::-webkit-scrollbar {
+        width: 3px;
+        background-color: transparent;
+    }
+    .selected-files-names::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: white;
+    }
+    .images-labels {
+        color: white;
+        font-weight: 300;
+        font-size: 12px;
+        border-radius: 10px;
+        border: 1px solid white;
+        margin: 2px;
+        padding: 7px;
+    }
+    .error-label {
+        color: red;
+        font-weight: 300;
+        font-size: 15px;
+        margin-top: 0.5em;
+        margin-bottom: 0;
+    }
+    .green-check {
+        width: 90px;
+        height: 90px;
+    }
+    .spinner-border.spinner-border-sm {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+@media only screen and (max-width: 699px) {
+    .home-logo {
+        width: 26px;
+        height: 25px;
+        position: absolute;
+        border: none;
+        left: 1.5em;
+    }
+    .home-logo:hover {
+        opacity: 0.5;
+    }
+    .image-pdf {
+        width: 45px;
+        height: 46px;
+        border: none;
+        margin: 0.4em;
+    }
+    .image-pdf-title {
+        color: white;
+        font-weight: 100;
+        font-size: 1em;
+        margin: 0;
+    }
+    .pdf-container {
+        text-align: center;
+        margin-top: 2em;
+        opacity: 0;
+    }
+    .upload-form {
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        margin: auto;
+        width: 20em;
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .dotted-pack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 2px dashed gray;
+        border-radius: 7px;
+        width: 13em;
+        margin: auto;
+        padding: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+    .upload-logo {
+        width: 40px;
+        height: 40px;
+        margin: 0.5em;
+    }
+    .btn.btn-outline-light {
+        color: white;
+        margin: 0.7em;
+        font-size: 15px;
+    }
+    .btn.btn-outline-light:hover {
+        background-color: #808080;
+    }
+    .files-number {
+        font-size: 15px;
+        margin: 0.6em;
+        font-weight: 400;
+        color: white;
+    }
+    .selected-files-names {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        height: 80px;
+        overflow-y: auto;
+    }
+    .selected-files-names::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    .selected-files-names::-webkit-scrollbar {
+        width: 3px;
+        background-color: transparent;
+    }
+    .selected-files-names::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    .images-labels {
+        color: white;
+        font-weight: 300;
+        font-size: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+        margin: 2px;
+        padding: 7px;
+    }
+    .error-label {
+        color: red;
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 0.7em;
+        margin-bottom: 0;
+    }
+    .green-check {
+        width: 90px;
+        height: 90px;
+    }
+    .spinner-border.spinner-border-sm {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+}

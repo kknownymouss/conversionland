@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/css/youtube_converter.css') }}">
+        <link rel="shortcut icon" href="static/images/favicon.ico" />
+        <title>Youtube to MP3</title>
+    </head>
+    <body class="bg" id="body">
+        <nav class="nav-bar">
+            <div id="container-fluid">
+                <img class="home-logo" src="/static/images/home.png">
+                <div class="youtube-header">
+                    <p class="youtube-mp3-title">Youtube to MP3</p>
+                    <img class="image-youtube" src="/static/images/ytb-mp3.png">
+                </div>
+            </div>
+        </nav>
+        <div class="youtube-container">
+            <div class="youtube-form">
+                <form method="post" id="link-form">
+                    <label class="youtube-label">Please insert a valid video URL:</label>
+                    <div class="input-button">
+                        <input id="input" name="video-link" style="outline: none;;" class="form-control" type="text" placeholder="Eg..,https://www.youtube.com/watch?v=Ncb_Qb7h698" autocomplete="off">
+                        <button type="submit" class="btn btn-outline-light" form="link-form" id="convert-but">Convert</button>
+                    </div>
+                </form>
+                {% with link_error = get_flashed_messages() %}
+                        {% if link_error %}
+                               <label class="error-label">{{ link_error[0] }}</label>
+                        {% endif %}
+                {% endwith %}
+                {% if title %}
+                    <label class="title-label">{{title}}</label><br>
+                    <div class="video-details">
+                        <img src="/static/temp_images/{{image_name}}.png">
+                        <div class="text-details">
+                            <h5>Length:<br><span class="details">{{length}}</span></h5>
+                            <h5>Size:<br><span class="details">{{size}}</span></h5>
+                            <h5>Views:<br><span class="details">{{views}}</span></h5>
+                            <h5>Channel:<br><span class="details">{{channel}}</span></h5>
+                            <form id="download-form" method="POST">
+                                <button type="submit" class="btn btn-outline-light" id="download-but" form="download-form" value="{{filename}}" name="filename">Download</button>
+                            </form>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+    <script src="{{url_for('static', filename='styles/js/youtube_converter.js')}}"></script>
+</html>
